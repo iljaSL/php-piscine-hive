@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Ballon</title>
+    <style>
+        #ballon {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: red;
+            margin: auto;
+            margin-top: 250px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="ballon"></div>
+</body>
+<script>
+        let Ballon = document.getElementById('ballon');
+        const colors = ['red', 'green', 'blue'];
+        let i = 0;
+
+        Ballon.addEventListener("click", () => {
+            ++i;
+            if (i > 2) {
+            i = 0;
+            }
+            Ballon.style.background = colors[i];
+            if (Ballon.clientHeight < 420) {
+                Ballon.style.width = Ballon.clientWidth + 10 + 'px';
+                Ballon.style.height = Ballon.clientHeight + 10 + 'px';
+            } else {
+                Ballon.style.width = 200 + 'px';
+                Ballon.style.height = 200 + 'px';
+            }
+        })
+
+        Ballon.addEventListener("mouseleave", () => {
+            --i;
+            if (i < 0) {
+            i = 2;
+            }
+            Ballon.style.background = colors[Math.abs(i)];
+
+            if (Ballon.clientHeight > 200) {
+                Ballon.style.width = Ballon.clientWidth - 5 + 'px';
+                Ballon.style.height = Ballon.clientHeight - 5 + 'px';
+            }
+        })
+
+</script>
+</html>

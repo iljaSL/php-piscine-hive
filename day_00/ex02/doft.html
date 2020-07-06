@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Day of the 42</title>
+    <link rel="stylesheet" href="doft.css">
+</head>
+<body>
+
+<div class="content">
+    <div class="rectangle" id="header">
+        <img id="day42" src="./resources/day_of_the_42.png" title="Day of the 42">
+        <a href="http://www.disney.com" target="_blank"><img id="reload" src="./resources/reload.png" title="Start from the beginning" alt="Start from the beginning"></a>
+        <a href="http://www.relaischateaux.com" target="_blank"><img id="close" src="./resources/close.gif" title="Disconnect" alt="Disconnect"></a>
+        <img id="loupe" src="./resources/loupe.png" title="Search">
+    </div>
+    <div id="bottom">
+        <div class="rectangle sidebar" id="actionbar">
+            <img class="actions" src="./resources/arrow.png" title="Move" alt="Move"><br/>
+            <img class="actions" src="./resources/main.png" title="Take" alt="Take"><br/>
+            <img class="actions selected" src="./resources/oeil.png" title="Look" alt="Look"><br/>
+            <img class="actions" src="./resources/outil.png" title="Use" alt="Use"><br/>
+            <img class="actions" src="./resources/chat-icon.png" title="Speak" alt="Speak"><br/>
+        </div>
+        <div class="rectangle" id="lab">
+            <img src="./resources/cluster.jpg" id="cluster" title="Cluster" usemap="#image_coords">
+            <map name="image_coords">
+                <area id="computer" title="Computer" alt="Computer" shape="poly" coords="658,303,650,381,690,390,711,401,719,409,776,416,779,309,779,310" href="http://www.apple.com" target="_blank"/>
+                <area id="chair" title="Chair" alt="Chair" shape="poly" coords="398,347,366,335,351,333,337,332,331,341,338,357,351,382,351,395,348,419,349,446,356,455,367,459,387,464,397,470,397,490,337,500,332,557,439,564,482,511,470,490,438,489,479,424,464,384,465,385" href="http://www.ikea.com" target="_blank"/>
+            </map>
+        </div>
+        <div class="rectangle sidebar" id="inventory">
+            <img id="book" src="./resources/book.png" title="Book" alt="Book"><br/>
+            <img id="towel" src="./resources/towel.png" title="Towel" alt="Towel"><br/>
+            <div id="brick" title="Brick" alt="Brick"></div>
+        </div>
+    </div>
+    <div class="rectangel searchbar" id="searchbar">
+        Vous <span id="span1">entrez</span> alors dans une grande piece remplie <br/>d'<span id="span2">ordinateurs...</span><br/>
+        <span id="span3">- Bonjour, vous &#234;tes nouveau ici ?</span><br/>
+        <input type="text" name="Response" size="60">   <input type="submit" value="Repondre"></button>
+    </div>
+</div>
+
+</body>
+
+</html>

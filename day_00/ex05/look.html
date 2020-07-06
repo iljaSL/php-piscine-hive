@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Day of the 42</title>
+    <link rel="stylesheet" href="scumm.css">
+</head>
+<body>
+<div class="content">
+    <div class="rectangle" id="header">
+        <img id="day42" src="./resources/day_of_the_42.png" title="Day of the 42">
+        <a href="scumm.html"><img id="reload" src="./resources/reload.png" title="Start from the beginning" alt="Start from the beginning"></a>
+        <a href="scumm.html"><img id="close" src="./resources/close.gif" title="Disconnect" alt="Disconnect"></a>
+        <img id="loupe" src="./resources/loupe.png" title="Search">
+    </div>
+    <div id="bottom">
+        <div class="rectangle sidebar" id="actionbar">
+            <img class="actions" src="./resources/arrow.png" title="Move" alt="Move"><br/>
+            <img class="actions" src="./resources/main.png" title="Take" alt="Take"><br/>
+            <a href="look.html">
+                <img id="look" class="actions" src="./resources/oeil.png" title="Look" alt="Look"><br/>
+            </a>
+            <img class="actions" src="./resources/outil.png" title="Use" alt="Use"><br/>
+            <img class="actions" src="./resources/chat-icon.png" title="Speak" alt="Speak"><br/>
+        </div>
+        <div class="rectangle" id="lab">
+            <img src="./resources/cluster.jpg" id="cluster-no" title="Cluster" usemap="#image_coords">
+            <map name="image_coords">
+                <area target="_blank" alt="YOU FOUND ME!" title="YOU FOUND ME!" href="https://media1.tenor.com/images/63415b2ea8b547e22fa5734e11607947/tenor.gif?itemid=7248435" coords="495,238,483,245,485,263,479,285,522,297,508,266,509,238,501,238,487,238" shape="poly">
+                <area target="_blank" alt="YOU FOUND ME!" title="YOU FOUND ME!" href="https://www.amazon.com/Apple-Keyboard-Numeric-Wireless-Rechargable/dp/B071ZZTNBM/ref=sr_1_3?crid=3AJSFDX8F7JWB&amp;dchild=1&amp;keywords=apple+keyboard&amp;qid=1592811586&amp;sprefix=apple+keybo%2Caps%2C240&amp;sr=8-3" coords="432,369,421,374,473,384,483,378" shape="poly">
+                <area target="_blank" alt="YOU FOUND ME!" title="YOU FOUND ME!" href="https://www.amazon.com/Apple-21-5-inch-quad-core-8th-generation-processor/dp/B07Q1P5SB5/ref=sr_1_1?dchild=1&amp;keywords=imac&amp;qid=1592811498&amp;sr=8-1" coords="658,307,773,315,769,416,654,380,655,377,655,327" shape="poly">
+            </map>
+        </div>
+        <div class="rectangle sidebar" id="inventory">
+            <img id="book" src="./resources/book.png" title="Book" alt="Book"><br/>
+            <img id="towel" src="./resources/towel.png" title="Towel" alt="Towel"><br/>
+            <div id="brick" title="Brick" alt="Brick"></div>
+        </div>
+    </div>
+    <div id="searchbar">
+        <div style="margin: 10px;">
+            <p>Did you find some object? Go back to jenna if you are bored! She might have different quest for you!</p>
+        </div>
+        <div style="width: 300px; margin-left: 220px; margin-right:auto;">
+            <form action="jenna2.html">
+                <input type="submit" name="send" title="Try again!" value="Go Back!">
+              </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

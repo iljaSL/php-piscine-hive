@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Day of the 42</title>
+    <link rel="stylesheet" href="scumm.css">
+</head>
+<body>
+<div class="content">
+    <div class="rectangle" id="header">
+        <img id="day42" src="./resources/day_of_the_42.png" title="Day of the 42">
+        <a href="scumm.html"><img id="reload" src="./resources/reload.png" title="Start from the beginning" alt="Start from the beginning"></a>
+        <a href="scumm.html"><img id="close" src="./resources/close.gif" title="Disconnect" alt="Disconnect"></a>
+        <img id="loupe" src="./resources/loupe.png" title="Search">
+    </div>
+    <div id="bottom">
+        <div class="rectangle sidebar" id="actionbar">
+            <img class="actions" src="./resources/arrow.png" title="Move" alt="Move"><br/>
+            <img class="actions" src="./resources/main.png" title="Take" alt="Take"><br/>
+            <a href="look.html">
+                <img class="actions" src="./resources/oeil.png" title="Look" alt="Look"><br/>
+            </a>
+            <img class="actions" src="./resources/outil.png" title="Use" alt="Use"><br/>
+            <img id="look" class="actions" src="./resources/chat-icon.png" title="Speak" alt="Speak"><br/>
+        </div>
+        <div class="rectangle" id="lab">
+            <img src="./resources/cluster.jpg" id="cluster-no" title="Cluster" usemap="#image_coords">
+            <map name="image_coords">
+                <p class="chat-box">Hey! You found me! Congrats!!! The next quest is to click the "Look" action and find some stuff in our Cluster!</p>
+            </map>
+        </div>
+        <div class="rectangle sidebar" id="inventory">
+            <img id="book" src="./resources/book.png" title="Book" alt="Book"><br/>
+            <img id="towel" src="./resources/towel.png" title="Towel" alt="Towel"><br/>
+            <div id="brick" title="Brick" alt="Brick"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

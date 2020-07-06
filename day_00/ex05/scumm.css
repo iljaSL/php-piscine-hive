@@ -1,0 +1,186 @@
+body {
+    background-color: #505050;
+}
+
+.chat-box {
+  width: 30%;
+  position: relative;
+  bottom: 427px;
+  right: 0px;
+  color: white;
+  background: black;
+
+}
+
+.cluster-box {
+  width: 30%;
+  position: relative;
+  bottom: 527px;
+  right: 0px;
+  color: white;
+  background: red;
+}
+
+#item1 {
+  padding-top: 20px;
+  width: 90%;
+}
+
+#day42 {
+    height: 130px;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+
+#reload {
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+#close {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+#loupe {
+    position: absolute;
+    right: 35px;
+    top: 30px;
+}
+
+#book {
+    width: 85px;
+    height: 125px;
+}
+
+#towel {
+    width: 75px;
+    height: 75px;
+}
+
+#span1 {
+    font-size: 30pt;
+    font-family: Serif;
+}
+
+#span2 {
+    text-shadow: 4px 4px 4px #FF0000;
+}
+
+#span3 {
+    font-style: italic;
+}
+
+.content {
+    padding-top: 25px;
+    text-align: center;
+    width: 1800px;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.rectangle {
+    background-color: #909090;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px;
+}
+
+.sidebar {
+    width: 175px;
+    height: 450px;
+}
+
+.selected {
+    border-style: solid;
+    border-color: red;
+    border-radius: 5px;
+}
+
+#header {
+    margin: auto;
+    width: 1550px;
+    height: 150px;
+    position: relative;
+}
+
+#bottom {
+    display: inline-block;
+    margin-top: 25px;
+    width: 1600px;
+}
+
+.actions {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+}
+
+#actionbar {
+    padding-top: 20px;
+    padding-bottom: 35px;
+    margin-left: 75px;
+    margin-right: 25px;
+    float:left;
+}
+
+#lab {
+    width: 1025px;
+    height: 575px;
+    padding: 20px;
+    float:left;
+}
+
+#cluster {
+    top: 15px;
+    left: 25px;
+}
+
+#cluster-no {
+    width: 100%;
+    height: 100%;
+}
+
+#inventory {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+    float:left;
+}
+
+#brick {
+    background-image: url('./resources/brick.jpg');
+    height: 75px;
+    width: 150px;
+    margin: 12px;
+}
+
+#searchbar {
+    padding-top: 5px;
+    padding-left: 15px;
+    text-align: left;
+    box-sizing: border-box;
+    background-color: #88ff89;
+    width: 550px;
+    height: 175px;
+    position: absolute;
+    bottom: -100px;
+    left: 75px;
+    z-index: 1;
+    font-family: Verdana;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+}
+
+#look {
+  height: 70px;
+  margin-top: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: red;
+  border-width: 5px;
+}

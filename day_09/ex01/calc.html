@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: turquoise;
+        }
+
+        form {
+            font-family: Georgia, Serif;
+            background-color: teal;
+            text-align: center;
+            width: 50%;
+            height: 55vh;
+            margin: 25vh auto;
+        }
+
+        form input {
+            font-family: Arial, Serif;
+            font-size: 1vw;
+            text-align: left;
+            cursor: grabbing;
+            width: 75%;
+            height: 12%;
+            margin: 0.8vh auto;
+        }
+
+        ::placeholder {
+            font-size: 1.2vw;
+            color: black;
+            font-size: italic;
+        }
+
+        #btn {
+            cursor: pointer;
+            box-shadow: 0px 1px 0px -2px white;
+            text-align: center;
+            width: 30%;
+        }
+
+        #top-bar {
+            margin-bottom: 5vh;
+            width: 100%;
+            height: 6%;
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div id="top-bar"></div>
+    <input type="text" name="first" placeholder="first Input"/><br/>
+    <select id="op">
+        <option disabled>Choose an operation</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select><br/>
+    <input type="text" name="second" placeholder="last Input"/><br/>
+    <input id="btn" type="submit" name="submit" value="Try me!"/>
+</form>
+</body>
+<script>
+    window.setInterval(function(){alert("Please, use me...")}, 30000);
+
+
+    let first = document.getElementsByName("first")[0];
+	let second = document.getElementsByName("second")[0];
+	let submit = document.getElementsByName("submit")[0];
+
+	submit.addEventListener("click", result);
+
+    const isInt = (nbr) => nbr % 1 === 0;
+
+    function isOver() {
+        console.log("It’s over 9000!");
+		alert("It’s over 9000!");
+    }
+
+	function result() {
+
+        if (first.value === "" || second.value === ""){
+        return ;
+        }
+
+		let firstIn = Number(first.value);
+		let secIn = Number(second.value);
+		let select = document.getElementById("op");
+	    selectedOp = select.options[select.selectedIndex].value;
+
+        if (firstIn >= 0 && secIn >= 0 && isInt(firstIn) && isInt(secIn)){
+
+            let res;
+
+	    	switch(selectedOp) {
+			    case "+":
+                    res = firstIn + secIn;
+                    console.log(res);
+                    alert(res);
+                    break;
+			    case "-":
+			        res = firstIn - secIn;
+					console.log(res);
+			        alert(res);
+			        break;
+		        case "*":
+		        	res = firstIn * secIn;
+					console.log(res);
+		        	alert(res);
+		        	break;
+		        case "/":
+		        	if (secIn === 0){
+		        		isOver();
+		        		break;
+		        	} else {
+		        		res = firstIn / secIn;
+						console.log(res);
+		        		alert(res);
+		        	}
+		        	break;
+		        case "%":
+		        	if (secIn === 0){
+		        		isOver();
+		        		break;
+		        	} else {
+		        		res = firstIn % secIn;
+						console.log(res);
+		        		alert(res);
+		        	}
+		        	break;
+			    default:
+			        operation = false;
+			}
+		} else {
+			console.log("Error :(");
+			alert("Error :(");
+		}
+	}
+
+</script>
+</html>

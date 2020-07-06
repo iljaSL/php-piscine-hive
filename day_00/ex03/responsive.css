@@ -1,0 +1,94 @@
+.symbol {
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+H1 {
+    color: white;
+    text-align: center;
+    font-family: Arial Black, sans-serif;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.full_table {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.picture {
+    text-align: center;
+}
+
+.periodRow{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-column-gap: 1px;
+}
+
+.number {
+    font-size: 0.9vw;
+    float: left;
+    margin-top: 90px;
+}
+
+.mass {
+    font-size: 0.9vw;
+    float: right;
+    margin-top: 90px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.element {
+    color: black;
+    position: relative;
+    margin: 2px;
+}
+
+.alkalimetal{
+    background-color: green;
+}
+
+.AlkalineEarthMetals{
+    background-color: yellowgreen;
+}
+
+.lanthanide{
+    background-color: darkseagreen;
+}
+
+.actinide{
+    background-color: lightskyblue;
+}
+
+.transmetal{
+    background-color: pink;
+}
+
+.synthetic{
+    background-color: coral;
+}
+
+.nonmetal{
+    background-color: mediumpurple;
+}
+
+.hydrogen{
+    background-color: lightblue;
+}
+
+.noblegas{
+    background-color: #e5871b;
+}
+
+.poormetal {
+    background-color: purple;
+}

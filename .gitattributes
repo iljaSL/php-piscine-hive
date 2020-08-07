@@ -1,0 +1,4 @@
+.gitattributes*.html linguist-detectable=false
+*.htm inguist-detectable=false
+*.php linguist-detectable=true
+views/* linguist-vendored

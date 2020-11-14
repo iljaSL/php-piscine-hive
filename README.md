@@ -1,4 +1,4 @@
-<h1Overview of the days:</h1>
+<h1>Overview of the days:</h1>
 <p>Day00: Basics in HTML and CSS</p>
 <p>Day01: Basics in PHP</p>
 <p>Day02: Regex with PHP</p>
